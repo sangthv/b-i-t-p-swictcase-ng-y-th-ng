@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+</head>
+<body>
+<input type="text" id="demo1">
+<button onclick="mynumber()"> tính số ngày</button>
+</body>
+<script>
+    function mynumber() {
+        let n1 = document.getElementById("demo1").value;
+        n1=parseInt(n1)
+        if (1 <= n1 && n1 <= 7) {
+            if (n1 % 2 == 0) {
+                if (n1 == 2) {
+                    alert("thang 2 co 28 hoac 29 day");
+                } else {
+                    alert("sẽ có 30 ngày" + n1);
+                }
+            } else {
+                alert("sẽ có 31 ngày " + n1);
+            }
+        } else if(8<=n1&& n1<=12){
+            if (n1 % 2 == 0) {
+                alert("sẽ có 31 ngày" + n1);
+
+            } else {
+                alert("sẽ có 30 ngày " + n1);
+            }
+        }else{
+            alert('nhaplai');
+        }
+    }
+</script>
+</html>
